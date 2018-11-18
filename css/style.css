@@ -28,17 +28,17 @@ Developer @GA in NYC
 }
 
 .clear {
- clear: both;
+    clear: both;
 }
 
 .alignright {
- float: right;
- padding: 0 0 10px 10px; /* note the padding around a right floated image */
+    float: right;
+    padding: 0 0 10px 10px; /* note the padding around a right floated image */
 }
 
 .alignleft {
- float: left;
- padding: 0 10px 10px 0; /* note the padding around a left floated image */
+    float: left;
+    padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 
@@ -56,7 +56,7 @@ body {
     
 }
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -114,14 +114,14 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
-
+    
+    
 }
 nav{
     text-align: center;
     margin-top: 50px;
-
-
+    
+    
 }
 
 a{
@@ -134,45 +134,50 @@ a{
 }
 
 a.active{
- background-color: slategray;
+    background-color: slategray;
 }
 
 a:hover:not(.active){
-  background-color: slategrey;
-
+    background-color: slategrey;
+    
 }
 
-.one-container{
-   width: 100%;
-
+.right-container{
+    width: 100%;
+    /* background-color: blue; */
+    
 }
+
 
 h4{
     font-family: 'Old Standard TT', serif;
     font-size: 6em;
-    font-weight: 700;
-    margin-top: 50px;
-    margin-left: 300px;
+    font-weight: 700; 
+  
 }
 
 h5{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.75em;
     font-weight: 600;
-    margin-left: 200px;
-    padding: 10px;
-
-
+   
+    
+    
 }
 
-.art-content{
+.art-content-right{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: nowrap;
-
-
+      
+}
+.label-left{
+    flex:1;
+    width: 50%;  
+    padding-left: 150px;
+   
 }
 
 .artist-bio1{
@@ -186,19 +191,89 @@ h5{
     flex: 1;
 }
 
+.art1{
+    display: flex;
+    margin-top: 50px;
+    width:100%;
+    
+}
+
+.spacer-right{
+    flex:1;
+    width: 50%;
+   
+     
+}
+
 .a-image1{
     flex:1;
     padding-top: 20px;
-
+    
 }
-
 .a-image2{
     flex:1;
     padding-top: 20px;
 }
 
+/* *************************************************************************** */
 
+.left-container{
+    width: 100%;
+   
+    
+}
+.art2{
+    display: flex;
+    margin-top: 40px;
+    width:100%;
+    
+}
+.spacer-left{
+    flex:1;
+    width:50%;
+    padding-right: 100px;
+    margin-right: 100px;
+   
+}
 
+.label-right{
+    flex:1;
+    width: 50%;  
+    padding-left: 200px;
+    
+}
+
+.art-content-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: flex-end; */
+    flex-wrap: nowrap;   
+} 
+.l-image1{
+    flex:1;
+    padding-top: 20px;
+    padding-left: 30px;
+    
+}
+
+.l-image2{
+    flex:1;
+    padding-top: 20px;
+}
+
+.artist-bio2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.40em;
+    /* width: 50%; */
+    margin-top: 10px;
+    margin-right: 20px;
+    flex: 1;
+}
+
+/* ********************************************************* */
 
 
 
