@@ -52,10 +52,10 @@ Developer @GA in NYC
     min-height: 100vh;
     display: flex;
     flex-direction: column; 
-    /* max-width: 1440px; */
+    max-width: 1440px;
     justify-content: center;
     margin: auto;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 
@@ -67,7 +67,7 @@ Developer @GA in NYC
 body { 
     min-height: 100vh;
     width: 100%; 
-    background-color: coral;
+   
 }
 
 
@@ -195,13 +195,13 @@ h3{
     /* *************** right container layout ***************/
     
     .right-container{
-        background-color: lightgrey;
+        /* background-color: lightgrey; */
         margin: 20px;
         
     }
     @media(max-width: 400px){
         .right-container{
-            background-color: lightgrey;
+            /* background-color: lightgrey; */
             width:100%;       
         }
     }
@@ -325,9 +325,8 @@ h3{
                      width: 100%;
                      display: flex;
                     flex-direction: row;
-                    /* justify-content: space-around; */
                     justify-content: center; 
-                    background-color: pink;    
+                    /* background-color: pink;     */
                     }}
                     
             @media(max-width: 646px){
@@ -338,15 +337,21 @@ h3{
                     align-items: center; 
                     }}
                         
-            .image-container .image1-r{
-                    flex:1;   
+            /* .image1-r:hover{
+                -moz-box-shadow: 0 0 5px #ccc;
+                -webkit-box-shadow: 0 0 5px #ccc;
+                box-shadow: 0 0 5px #ccc;
                     }
                         
-            .image-container .image2-r{
-                    flex:1;
-                    padding-left: 20px;   
-                     }
-                        
+            .image2-r:hover{
+                -moz-box-shadow: 0 0 5px #ccc;
+                -webkit-box-shadow: 0 0 5px #ccc;
+                box-shadow: 0 0 5px #ccc;
+                    }             */
+         
+
+
+                       
              @media(max-width: 1024px){
                 .image1-r{
                     flex:2;
@@ -359,21 +364,22 @@ h3{
                     flex:2;
                      padding-bottom: 20px;
                     }}
+
+            @media(max-width: 320px){
+                .image1-r{
+                    flex:1;
+                    text-align: center;   
+                    }
+                 }
+
+
             @media(max-width: 1024px){
                 .image2-r{
                     flex:2;
                     /* padding-right:10px; */
                                         
                     }}
-                                    
-             @media(max-width: 320px){
-                .image1-r{
-                    flex:1;
-                    text-align: center;   
-                        }
-                     }
-                                    
-                                    
+                                                            
              @media(max-width: 320px){
                 .image1-l{
                     flex:1;
@@ -381,17 +387,43 @@ h3{
                     text-align: center;   
                         }
                     }
-                                    
+/******************images*****************/
+
+.image-container-right .btn{
+    background-color: slategray;
+}
+
+.image-container-right .btn:hover{
+    background-color: black;
+}
+
+
+
+/* button #artemesia1 {
+    border-radius:2px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+#artemesia1:focus {opacity: 0.7;} */
+
+#artemesia2 {
+    border-radius:2px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+#artemesia2:focus {opacity: 0.7;}
                                     
  /* **************************** Left container layout ***************************** */
                  .left-container{
-                     background-color: lightgrey;
+                     /* background-color: lightgrey; */
                     margin:20px;    
                      }
                                     
             @media(max-width: 320px){
                  .left-container{
-                    background-color: lightgrey; 
+                    /* background-color: lightgrey;  */
                     width: 100%;      
                          }
                     }
@@ -440,7 +472,10 @@ h3{
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: flex-start;
-                    flex-wrap: nowrap;    } 
+                    flex-wrap: nowrap; 
+                    width: 100%;
+                
+                } 
                                             
             @media(max-width: 1024px){
                 .art-content-left{
@@ -449,16 +484,25 @@ h3{
                     flex-flow: column-reverse;
                     margin-left: 60px;
                     margin-right: 60px;
+                    padding-top: 20px;
                     /* width:100%;  */                              
                         } 
                      }
-                                            
+                     @media(max-width: 646px){
+                        .art-content-left{
+                            display: flex;
+                            flex-direction: column;  
+                            flex-flow: column-reverse;
+                             align-content: center;                            
+                                } 
+                             }                               
             @media(max-width: 320px){
                 .art-content-left{
                      display: flex;
                     flex-direction: column;  
                     flex-flow: column-reverse;
                     width:100%; 
+
                         } 
                     }
                                             
@@ -468,7 +512,7 @@ h3{
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 1.40em;
-                    /* width: 50%; */
+                    /* max-width: 50%; */
                     padding-left: 20px;
                     padding-right: 20px;
                     flex: 1;
@@ -476,14 +520,14 @@ h3{
                                             
             @media(max-width: 1024px){
                 .artist-bio2{
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 1.40em;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    flex: 1;
-                    width: 100%;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.40em;
+                /* padding-left: 20px;
+                padding-right: 20px; */
+                flex: 1;
+                width: 90%;
                     }}
                                                 
             @media(max-width: 320px){
@@ -503,14 +547,31 @@ h3{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    background-color: pink;
+                    padding-top: 20px;
+                    /* background-color: pink; */
                         }
+/* 
+                 .image1-l:hover{
+                    -moz-box-shadow: 0 0 10px #ccc;
+                    -webkit-box-shadow: 0 0 10px #ccc;
+                    box-shadow: 0 0 10px #ccc;
+                    }
+                                    
+                .image2-l:hover{
+                    -moz-box-shadow: 0 0 10px #ccc;
+                    -webkit-box-shadow: 0 0 10px #ccc;
+                    box-shadow: 0 0 10px #ccc;
+                     }  */
+
+
             @media(max-width: 1024px){
                 .image-container-left{
                     width: 100%;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around; 
+                    overflow: auto;
+                    width: 845px;
                                                             
                     }}
                                                         
@@ -520,8 +581,14 @@ h3{
                     display: flex;
                     flex-direction: column;
                     flex-flow: column-reverse;
-                    /* align-items: center; */
+                    width: 330px;
+                    margin-right: 80px;
+                    background-color: pink;
                     }}
+
+                   
+                   flex-direction: row;
+                   justify-content: center; 
                                                             
                 .image-container .image1-l{
                     flex:1; 
@@ -531,7 +598,7 @@ h3{
                 .image-container .image2-l{
                     flex:1;
                     }
-                                                            
+
              @media(max-width: 1024px){
                 .image-container .image1-l{
                     flex:1; 
@@ -546,33 +613,91 @@ h3{
                     }
                 }
 
+                @media(max-width: 646px){
+                    .image-container .image1-l{
+                        flex:1; 
+                        padding-top: 20px;  
+                    }
+                }
+                                                                    
+                @media(max-width: 646px){
+                    .image-container .image2-l{
+                        flex:1; 
+                        padding-top: 20px;  
+                     }
+                }
+
             @media(max-width: 646px){
                 .image1-l{
                     flex:2;
                     padding-bottom: 20px;
                     }}
-                                                                
-            @media(max-width: 646px){
-                .image-container .image1-l{
-                    flex:1; 
-                    padding-top: 20px;  
-                }
-            }
-                                                                
-            @media(max-width: 646px){
-                .image-container .image2-l{
-                    flex:1; 
-                    padding-top: 20px;  
-                 }
-            }
+             
+            @media(max-width: 320px){
+                .image1-l{
+                    flex:1;
+                    max-width: 50%;
+                    text-align: center;   
+                    }
+                }        
+
+
+
+
                                                                 
                                                                 
                                                                 
- /* ********************************************************* */
+ /* ************************* MODAL ********************** */
                                                                 
+ .modal {
+    border: 1px solid #eee;
+    padding: 50px;
+  }
+  
+  .overlay {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-container {
+    width: 80vw;
+    max-width: 1000px; 
+    padding: 50px;
+  }
+  
+  .hidden{
+    display: none;
+  }                                                            
                                                                 
-                                                                
-                                                                
-                                                              
+ /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}     
+ 
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
                                                                 
                                                                 
