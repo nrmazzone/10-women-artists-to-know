@@ -18,7 +18,7 @@ $('.image1-r artemisia button').on('click',function(){
     const $modalContainerA1 = $('Div').addClass('modal-container-a1').appendTo($overlay)
     $('<button>').text('close').appendTo($modalContainerA1).on('click', function(){
         $overlay.remove()
-    $('<div.').appendTo($modalContainerA1)
+    $('<div>').img('images/artemisia-1lrg.png').appendTo($modalContainerA1)
     $('<p>').text('Judith Beheading Holofernes').appendTo($modalContainerA1)
    
     })
