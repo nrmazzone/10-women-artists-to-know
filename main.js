@@ -13,7 +13,7 @@ const shouldShowModal = true;
 //  var modalImg = document.getElementById('img1');
 //  var captionText = document.getElementById('caption');
 
-$('.image1-r artemisia button').on('click',function(){
+$('#artemesia1').on('click',function(){
     const $overlay = $('<div>').addClass('overlay').appendTo('body')
     const $modalContainerA1 = $('Div').addClass('modal-container-a1').appendTo($overlay)
     $('<button>').text('close').appendTo($modalContainerA1).on('click', function(){

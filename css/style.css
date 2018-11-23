@@ -233,7 +233,7 @@ h3{
             width: 100%;  
             margin: auto;
             text-align: center;
-            padding-left: 40px;   
+            padding-left: 140px;  
         }
     }
     
@@ -406,6 +406,120 @@ h3{
 }
 
 #artemesia2:focus {opacity: 0.7;}
+
+#julia1{
+    cursor:pointer;
+    transition: 0.3s; 
+}
+#julia1:focus {opacity: 0.7;}
+
+#julia2{
+    cursor:pointer;
+    transition: 0.3s; 
+}
+
+#julia2:focus {opacity: 0.7;}
+
+#morisot1{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#morisot1:focus {opacity: 0.7;}
+
+#morisot2{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#morisot2:focus {opacity: 0.7;}
+
+#cassatt1{
+    cursor:pointer;
+    transition: 0.3s; 
+}
+
+#cassatt1:focus {opacity: 0.7;}
+
+#cassatt2{
+    cursor:pointer;
+    transition: 0.3s; 
+}
+
+#cassatt2:focus {opacity: 0.7;}
+
+#munter1{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#munter1:focus {opacity: 0.7;}
+
+#munter2{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#munter2:focus {opacity: 0.7;}
+
+
+#kollwitz1{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#kollwitz1:focus {opacity: 0.7;}
+
+#kollwitz2{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#kollwitz2:focus {opacity: 0.7;}
+
+#mitchell1{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#mitchell1:focus {opacity: 0.7;}
+
+#mitchell2{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#mitchell2:focus {opacity: 0.7;}
+
+#frankenthaler1{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#frankenthaler1:focus {opacity: 0.7;}
+
+#frankenthaler2{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#frankenthaler2:focus {opacity: 0.7;}
+
+
+#joffe1{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#joffe1:focus {opacity: 0.7;}
+
+#joffe2{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#joffe2:focus {opacity: 0.7;}
+
+#saville1{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#saville1:focus {opacity: 0.7;}
+
+#saville2{
+    cursor:pointer;
+    transition: 0.3s;
+}
+#saville2:focus {opacity: 0.7;}
+
                                     
  /* **************************** Left container layout ***************************** */
                  .left-container{
@@ -448,7 +562,8 @@ h3{
                                         
                  .label-right{
                     flex:1;
-                    width: 50%;   
+                    width: 50%;
+                    padding-left: 40px;   
                     }
                                         
             @media(max-width: 320px){
@@ -507,6 +622,7 @@ h3{
                     /* max-width: 50%; */
                     padding-left: 20px;
                     padding-right: 20px;
+                    padding-top: 20px;
                     flex: 1;
                      }
                                             
