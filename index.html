@@ -39,7 +39,7 @@
     <section class="right-container artemisia">
             <div class="art1">
                     <div class ="label-left">
-                        <h4>01</h4>
+                        <h4 id="1"> 01</h4>
                         <h5> Artemsia Gentileschi</h5>
                     </div>
                      <div class="spacer-right"></div>
@@ -68,7 +68,7 @@
             <div class="art2">
                 <div class="spacer-left"></div>
                      <div class ="label-right">
-                        <h4>02</h4>
+                        <h4 id="2">02</h4>
                         <h5> Julia Lama</h5>
                     </div>
             </div>
@@ -98,7 +98,7 @@
         
             <div class="art1">
                 <div class ="label-left">
-                    <h4>03</h4>
+                    <h4 id="3"  >03</h4>
                     <h5> Berthe Morisot</h5>
                 </div>
                  <div class="spacer-right"></div>
@@ -129,7 +129,7 @@
             <div class="art2">
                 <div class="spacer-left"></div>
                     <div class ="label-right">
-                        <h4>04</h4>
+                        <h4 id="4" >04</h4>
                         <h5> Mary Cassatt</h5>
                     </div>
             </div>
@@ -157,7 +157,7 @@
     <section class="right-container gabriel munter" >
         <div class="art1">
                     <div class ="label-left">
-                         <h4>05</h4>
+                         <h4 id="5">05</h4>
                          <h5> Gabriele Münter</h5>
                     </div>
                         <div class="spacer-right"></div>
@@ -187,7 +187,7 @@
         <div class="art2">
             <div class="spacer-left"></div>
                 <div class ="label-right">
-                    <h4>06</h4>
+                    <h4 id="6">06</h4>
                      <h5> Käthe Kollwitz</h5>
                 </div>
         </div>
@@ -218,7 +218,7 @@
     <section class="right-container joan-mitchell1">
          <div class="art1">
             <div class ="label-left">
-                <h4>07</h4>
+                <h4 id="7">07</h4>
                  <h5> Joan Mitchell</h5>
             </div>
             <div class="spacer-right"></div>
@@ -250,7 +250,7 @@
         <div class="art2">
             <div class="spacer-left"></div>
                 <div class ="label-right">
-                    <h4>08</h4>
+                    <h4 id= "8">08</h4>
                     <h5> Helen Frankenthaler </h5>
                 </div>
         </div>
@@ -279,7 +279,7 @@
     <section class="right-container chantel joffe">
         <div class="art1">
             <div class ="label-left">
-                <h4>09</h4>
+                <h4 id= "9">09</h4>
                 <h5> Chantel Joffe</h5>
             </div>
                 <div class="spacer-right"></div>
@@ -307,11 +307,11 @@
         </div>
     </section>
                                                     
-    <section class="left-container jenny saville">
+    <section class="left-container jenny saville">  
         <div class="art2">
             <div class="spacer-left"></div>
                 <div class ="label-right">
-                    <h4>10</h4>
+                    <h4 id= "10">10</h4>
                     <h5> Jenny Saville  </h5>
                 </div>
         </div>
@@ -338,7 +338,7 @@
         </div>
                                                             
     </section>
-</div>     
+    
 <!-- PAGE CONTAINER ENDS -->
 
  <!-- MODAL STARTS BELOW  -->
@@ -351,19 +351,26 @@
 
    <div class="overlay hidden">
        
-
-      <div class="modal-container-a1">
-       <div class="art1"> <img src="images/artemisia-1lrg.png" alt= "Judith Beheading Holofernes"/> </div>
-        <div id="caption"></div>
+        <img id="art1" src="images/artemisia-1lrg.png" alt= "Judith Beheading Holofernes" style="width:100%;max-width:300px">
+        <div id="myModal" class="modal1">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="art1">
+                <div id="caption"></div>
+              </div>
+      <!-- <div id="modal-container-a1">
+       <div class="art1"> <img src="images/artemisia-1lrg.png" alt= "Judith Beheading Holofernes"/></div>
         <button class="close">&times;</button>
       </div>
 
+      <div id="modal-container-a2">
+            <div class="art2"> <img src="images/artemisia-2lrg.png" alt= "Conversion of the Magdalene"/> </div>
+             <button class="close">&times;</button>
+           </div>
+
+    </div> -->
 
 
-    </div>
-
-
-
+</div> 
 
 <script
    src="https://code.jquery.com/jquery-3.3.1.min.js"
