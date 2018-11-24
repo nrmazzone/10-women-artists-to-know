@@ -757,11 +757,12 @@ h3{
                                                                 
  /* ************************* MODAL ********************** */
                                                                 
- /* .modal {
+ .modal {
     border: 1px solid #eee;
     padding: 50px;
-  } */
-  .modal {
+  }
+
+  .overlay {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -770,38 +771,16 @@ h3{
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-
-/* Modal Content (image) */
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-
-    /* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-@-webkit-keyframes zoom {
+    
+    
+    
+    @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
@@ -834,18 +813,38 @@ h3{
     }
 }
   
-  /* .modal-container {
+  .modal-container {
     width: 80vw;
-    max-width: 1000px; 
+    display: block;
+    max-width: 700px; 
     padding: 50px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
     animation-name: modalOpen;
     animation-duration: 1s;
-  } */
+  }
+
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-container, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
   
-  /* .hidden{
+  .hidden{
     display: none;
-  }                                                             */
+  }                                                            
                                                                 
  /* The Close Button */
 /* .close {
