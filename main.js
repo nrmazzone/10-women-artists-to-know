@@ -3,37 +3,56 @@
 const shouldShowModal = true;
 console.log(123);
 
-// $('.image1-r artemisia button, .close').on('click',function(){
-//     $('.overlay').toggleClass('hidden');
-// })
-
-// get modal element
-// var modal= document.getElementsByClassName("modal-container-a1");
-//  var img = document.getElementById('artemesia1');
-//  var modalImg = document.getElementById('img1');
-//  var captionText = document.getElementById('caption');
-
+$('.modal button, .close').on('click', function() {
+  $('.overlay').toggleClass('hidden');
+})
 $('#artemesia1').on('click',function(){
     const $overlay = $('<div>').addClass('overlay').appendTo('body')
-    const $modalContainerA1 = $('Div').addClass('modal-container-a1').appendTo($overlay)
-    $('close').text('&times;').appendTo($modalContainerA1).on('click', function(){
-        $overlay.remove()
-        $('.art1').append('<img src="images/artemisia-1lrg.png"/><br/>').append($(this).html());
-        $('<p>').text('Judith Beheading Holofernes').appendTo($modalContainerA1)
-   
+    const $modalContainer1 = $('Div').addClass('modal-container 1').appendTo($overlay) 
+    $('.art1').append('<img src="images/artimesia-1lrg.png"/><br/>').append($(this).html());
+        $('<div>').text('Judith Beheading Holofernes').appendTo($modalContainer1)
+        $('<button>').text('X').appendTo($modalContainer1).on('click', function() {
+            $overlay.remove()
+    })
+})
+
+$('#artemesia2').on('click',function(){
+    const $overlay = $('<div>').addClass('overlay').appendTo('body')
+    const $modalContainer2 = $('Div').addClass('modal-container 2').appendTo($overlay) 
+    $('.art2').append('<img src="images/artimesia2lrg.png"/><br/>').append($(this).html());
+        $('<div>').text('Conversion of the Magdalene').appendTo($modalContainer2)
+        $('<button>').text('X').appendTo($modalContainer2).on('click', function() {
+            $overlay.remove()
+    })
+})
+
+$('#julia1').on('click',function(){
+    const $overlay = $('<div>').addClass('overlay').appendTo('body')
+    const $modalContainer3 = $('Div').addClass('modal-container 3').appendTo($overlay) 
+    $('.art1').append('<img src="images/artimesia-1lrg.png"/><br/>').append($(this).html());
+        $('<div>').text('Self Portrait').appendTo($modalContainer3)
+        $('<button>').text('X').appendTo($modalContainer3).on('click', function() {
+            $overlay.remove()
+    })
+})
+$('#julia2').on('click',function(){
+    const $overlay = $('<div>').addClass('overlay').appendTo('body')
+    const $modalContainer4 = $('Div').addClass('modal-container 4').appendTo($overlay) 
+    $('.art1').append('<img src="images/artimesia-1lrg.png"/><br/>').append($(this).html());
+        $('<div>').text('The Martyre of Saint Jean L Evangeliste' ).appendTo($modalContainer4)
+        $('<button>').text('X').appendTo($modalContainer4).on('click', function() {
+            $overlay.remove()
     })
 })
 
 
-
-
-
-if (!closeShouldDisplay){
-    $('.buttonholder').remove()
+if (!buttonShouldDisplay){
+    $('.button').remove()
 }
 if (!shouldShowModal){
-    $('.overlay').remove()
-}
+    $('.overlay').remove()}
+
+
 
 
 
