@@ -757,10 +757,12 @@ h3{
                                                                 
  /* ************************* MODAL ********************** */
                                                                 
- .modal {
+ /* .modal {
+    height: 100vh;
+    width: 100vw;
     border: 1px solid #eee;
     padding: 50px;
-  }
+  } */
 
 .overlay {
         top: 0;
@@ -792,6 +794,7 @@ h3{
     width: 80vw;
     max-width: 100px; 
     padding: 50px;
+    flex:1;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
     animation-name: modalOpen;
     animation-duration: 1s;
@@ -800,14 +803,12 @@ h3{
   .caption{
     font-family:'Open Sans', sans-serif; 
     font-weight: 600;
-     font-size: 18px;
+    font-size: 18px;
     color: #ccc;
-    padding: 10px 0;
+    padding-bottom: 20px;
     margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-
+    text-align: center;
+    flex: 1;
   } 
 
 
@@ -839,38 +840,4 @@ h3{
   .hidden{
     display: none;
   }                                                            
-                                                                
- /* The Close Button */
-/* .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-} */
-
-/* .closeBtn{
-    color: #ccc;
-    float: right;
-    font-size:30;
-}
-
-.closeBtn:hover,.closeBtn:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}  
-
-@keyframes modalopen{
-    from{opacity: 0}
-    to {opacity:1}
-}
- 
-/* 100% Image Width on Smaller Screens */
-/* @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    } */
-                                                            
+                                                 
