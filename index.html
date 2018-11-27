@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     
     
     <title>10 Women Artists to Know</title>
@@ -52,7 +54,7 @@
                             woman to be accepted into the Florentine Academy of Fine Arts, where she continued her artistic education. During this period, Gentileschi was held in high esteem by both the royal court and scholars, 
                             eventually establishing a much-heralded relationship with the astronomer, philosopher, and physicist, Galileo</p>
                      </div>
-    
+                     
                      <div class="image-container-right">      
                         <div class="image1-r artemisia">
                                 <button><img id="artemesia1" src= "images/artemsia-1.png" alt="Judith Beheading Holofernes"/></button>
@@ -348,16 +350,20 @@
 
 <div class="overlay hidden">
 
-    <div class="modal-container1">
-        <div class = "caption"> Judith Beheading Holofernes</div>
-        <div class="art1"> <img src="images/artimesia-1lrg.png"></div>
-        <button class="close">X</button>
+    <div class="modal-container1" class="modal">
+        <div class="modal-content">
+            <button class="close">X</button>
+             <div class = "caption"> Judith Beheading Holofernes</div>
+            <div class="art1"> <img src="images/artimesia-1lrg.png"></div>   
+        </div>
     </div>
    
-    <div id="modal-container2">
-        <div class= "caption"> Penitent Mary Magdalene </div>
-        <div class="art2"> <img src="images/artimesia2lrg.png"></div> 
-        <button class="close">X</button>
+    <div class="modal-container2" class="modal">
+        <div class="modal-content">
+            <button class="close">X</button>
+            <div class= "caption"> Penitent Mary Magdalene </div>
+            <div class="art2"> <img src="images/artimesia2lrg.png"></div> 
+        </div>
     </div>
      
     <div id="modal-container3">
@@ -499,8 +505,8 @@
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
-<script src='./main.js'></script>
- 
-                                                       -->
+
+<script src="./main.js" defer></script>
+
  </body>
  </html>

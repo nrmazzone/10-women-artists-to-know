@@ -1,5 +1,6 @@
 
-// show modal
+
+
 const shouldShowModal = true;
 console.log(123);
 
@@ -12,7 +13,7 @@ $('#artemesia1').on('click',function(){
     const $modalContainer1 = $('Div').addClass('modal-container1').appendTo($overlay) 
     
      $('.art1').append('<img src="images/artimesia-1lrg.png"/>').append($(this).html());
-     $('<div>').text('Judith Beheading Holofernes').appendTo($modalContainer1)
+     $('.caption').text('Judith Beheading Holofernes').appendTo($modalContainer1)
      $('<button>').text('X').appendTo($modalContainer1).on('click', function() {
             $overlay.remove()
     })
@@ -211,15 +212,6 @@ $('#artemesia1').on('click',function(){
 //             $overlay.remove()
 //     })
 // })
-
-
-
-
-
-
-
-
-
 
 
 
