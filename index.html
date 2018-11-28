@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     
     
     
@@ -61,7 +61,7 @@
                         </div>
                             
                         <div class="image2-r artemisia">
-                                <button> <img id="artemsia2" src="images/artemsia-2.png" alt="Conversion of the Magdalene"/></button>
+                                <button><img id="artemsia2" src="images/artemsia-2.png" alt="Conversion of the Magdalene"/></button>
                         </div>
                     </div>        
                 </div>   
@@ -118,7 +118,8 @@
                     <div class="image1-r morisot">
                             <button><img id="morisot1" src= "images/berthe-morisot1.png" alt="Reading"/></button>
                     </div>
-                        
+                    
+   
                     <div class="image2-r morisot">
                             <button> <img id="morisot2" src="images/berthe-morisot2.png" alt="The Cradle"/></button>
                     </div>
@@ -348,127 +349,171 @@
 
  <!-- MODAL STARTS BELOW  -->
 
-<div class="overlay hidden">
 
-    <div class="modal-container1" class="modal">
+    <div id="modal-container1" class="modal overlay hidden">
         <div class="modal-content">
             <button class="close">X</button>
-             <div class = "caption"> Judith Beheading Holofernes</div>
-            <div class="art1"> <img src="images/artimesia-1lrg.png"></div>   
-        </div>
+            <div class = "caption"> Judith Beheading Holofernes</div> 
+            <div class="Gentileschi1"> <img src="images/artimesia-1lrg.png"></div>  
+        </div>  
     </div>
-   
-    <div class="modal-container2" class="modal">
+    
+
+    <div id="modal-container2" class="modal overlay hidden">
+            <div class="modal-content">
+                <button class="close">X</button>
+                <div class = "caption"> Penitent Mary Magdalene </div> 
+                <div class="Gentileschi1"> <img src="images/artimesia2lrg.png"></div>  
+            </div>   
+    </div>
+       
+
+    <div id="modal-container3" class="modal overlay hidden">
         <div class="modal-content">
-            <button class="close">X</button>
-            <div class= "caption"> Penitent Mary Magdalene </div>
-            <div class="art2"> <img src="images/artimesia2lrg.png"></div> 
-        </div>
-    </div>
-     
-    <div id="modal-container3">
-        <div class= "caption"> Self Portrait</div>
-        <div class="art3"><img src="images/julia1lrg.png"></div>
-        <button class="close">X</button>
-    </div>
-      
-    <div id="modal-container4">
-        <div class= "caption"> The Martyre of Saint Jean L'Evangeliste</div>
-        <div class="art4"> <img src="images/julia2lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-
-    <div id="modal-container5">
-        <div class= "caption"> Reading</div>
-        <div class="art5"> <img src="images/berthe1lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-
-    <div id="modal-container6">
-        <div class= "caption">The Cradle</div>
-        <div class="art6"> <img src="images/berthe2lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-
-    <div id="modal-container7">
-        <div class= "caption">Mother Combing Child's Hair</div>
-        <div class="art7"> <img src="images/mary1lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-    
-    <div id="modal-container8">
-        <div class= "caption">The Bath</div>
-        <div class="art8"> <img src="images/mary2lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-
-    <div id="modal-container9">
-        <div class= "caption">Portrait of Marianne von Werefkin</div>
-        <div class="art9"> <img src="images/gabriele1lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-        
-    <div id="modal-container10">
-        <div class= "caption">Self-portrait in front of an Easel</div>
-        <div class="art10"> <img src="images/gabriele2lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-
-    <div id="modal-container11">
-        <div class= "caption">Woman with Dead Child</div>
-        <div class="art11"> <img src="images/kathe1lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-            
-    <div id="modal-container12">
-        <div class= "caption">The Survivors</div>
-        <div class="art12"> <img src="images/kathe2lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-    
-    <div id="modal-container13">
-        <div class= "caption">Joan Mitchell 1961</div>
-        <div class="art13"> <img src="images/joan1lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
+                <button class="close">X</button>
+                <div class= "caption"> Self Portrait</div>
+                <div class="art-3"><img src="images/julia1lrg.png"></div>
                 
-    <div id="modal-container14">
-        <div class= "caption">Untitled 1992</div>
-        <div class="art14"> <img src="images/joan2lrg.png"></div> 
-        <button class="close">X</button>
+        </div>
     </div>
 
-    <div id="modal-container15">
-        <div class= "caption">Blue Bellows</div>
-        <div class="art15"> <img src="images/helen1lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-                    
-    <div id="modal-container16">
-        <div class= "caption">Canyon</div>
-        <div class="art16"> <img src="images/helen2lrg.png"></div> 
-        <button class="close">X</button>
+    <div id="modal-container4" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption"> The Martyre of Saint Jean L'Evangeliste</div>
+            <div class="art-4"> <img src="images/julia2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
     </div>
 
-    <div id="modal-container17">
-        <div class= "caption">Chantal Joffe</div>
-        <div class="art17"> <img src="images/chantel1lrg.png"></div> 
-        <button class="close">X</button>
-    </div>
-                        
-    <div id="modal-container18">
-        <div class= "caption">The squid and the whale</div>
-        <div class="art18"> <img src="images/chantel2lrg.png"></div> 
-        <button class="close">X</button>
+    <div id="modal-container5" class="modal overlay hidden"> 
+            <div class="modal-content">
+                <div class= "caption"> Reading</div>
+                <div class="art5"> <img src="images/berthe1lrg.png"></div> 
+                <button class="close">X</button>
+            </div>
+    </div>  
+
+
+    <div id="modal-container6" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">The Cradle</div>
+            <div class="art6"> <img src="images/berthe2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
     </div>
 
-    <div id="modal-container19">
-        <div class= "caption">Reverse</div>
-        <div class="art19"> <img src="images/jenny1lrg.png"></div> 
-        <button class="close">X</button>
+
+    <div id="modal-container7" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Mother Combing Child's Hair</div>
+            <div class="art7"> <img src="images/mary1lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
     </div>
-                            
-    <div id="modal-container20">
+
+
+    <div id="modal-container8" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">The Bath</div>
+            <div class="art8"> <img src="images/mary2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+
+
+    <div id="modal-container9" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Portrait of Marianne von Werefkin</div>
+            <div class="art9"> <img src="images/gabriele1lrg.png"></div> 
+            <button class="close">X</button>
+        </div>  
+    </div>
+    
+    <div id="modal-container10" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Self-portrait in front of an Easel</div>
+            <div class="art10"> <img src="images/gabriele2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+    <div id="modal-container11" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Woman with Dead Child</div>
+            <div class="art11"> <img src="images/kathe1lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+          
+    <div id="modal-container12" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">The Survivors</div>
+            <div class="art12"> <img src="images/kathe2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+    <div id="modal-container13" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Joan Mitchell 1961</div>
+            <div class="art13"> <img src="images/joan1lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+    <div id="modal-container14" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Untitled 1992</div>
+            <div class="art14"> <img src="images/joan2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+    <div id="modal-container15" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Blue Bellows</div>
+            <div class="art15"> <img src="images/helen1lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+    <div id="modal-container16" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Canyon</div>
+            <div class="art16"> <img src="images/helen2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+    <div id="modal-container17" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Chantal Joffe</div>
+            <div class="art17"> <img src="images/chantel1lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+    <div id="modal-container18" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">The squid and the whale</div>
+            <div class="art18"> <img src="images/chantel2lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+
+    <div id="modal-container19" class="modal overlay hidden"> 
+        <div class="modal-content">
+            <div class= "caption">Reverse</div>
+            <div class="art19"> <img src="images/jenny1lrg.png"></div> 
+            <button class="close">X</button>
+        </div>
+    </div>
+
+                       
+    <div id="modal-container20" class="modal overlay hidden"> 
+        <div class="modal-content">
         <div class= "caption">The blue Pieta</div>
         <div class="art20"> <img src="images/jenny2lrg.png"></div> 
         <button class="close">X</button>
@@ -506,7 +551,7 @@ src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 
-<script src="./main.js" defer></script>
+<script src="main.js" defer></script>
 
  </body>
  </html>
