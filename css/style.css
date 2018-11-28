@@ -66,7 +66,7 @@ Developer @GA in NYC
         display: flex;
         flex-direction: column; 
         justify-content: center;
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
     }   
 }
 
@@ -279,6 +279,7 @@ h5{
     line-height: 1.40em;
     width: 460px;
     padding: 20px;
+    margin-right: 20px;
     /* margin-left: 30px; */
     flex: 1;
 }
@@ -301,7 +302,7 @@ h5{
         font-size: 16px;
         font-weight: 400;
         line-height: 1.40em;
-        max-width: 500px;
+        max-width: 100%;
         padding-left: 20px;
         flex: 1;
         /* width: 100%; */
@@ -370,13 +371,13 @@ h5{
 
 
 
-#artemesia1 {
+button #artemesia1 {
     /* border-radius:2px; */
     cursor:pointer;
     transition: 0.3s;
 }
 
-#artemesia1:focus {opacity: 0.7;}
+button #artemesia1:focus {opacity: 0.7;}
 
 #artemsia2 {
     /* border-radius:2px; */
@@ -501,17 +502,8 @@ h5{
 
                                     
  /* **************************** Left container layout ***************************** */
-              
-                                    
-@media(max-width: 320px){
-    .left-container{
-        /* background-color: lightgrey;  */
-        width: 100%; 
-        text-align: center;     
-    }
-}
-
-.art2{
+ 
+ .art2{
     width:100%;
     display: flex;
     flex-direction: row;   
@@ -521,7 +513,6 @@ h5{
     .art2{
         width:100%;
         display: flex;
-        /* flex-direction: row;    */
     }
 }
                                     
@@ -540,7 +531,6 @@ h5{
 .label-right{
     flex:1;
     width: 50%;
-    /* padding-left: 40px;  */
     padding-top: 20px;   
 }
                                         
@@ -566,10 +556,7 @@ h5{
         display: flex;
         flex-direction: column;  
         flex-flow: column-reverse;
-        /* margin-left: 60px; */
-        /* margin-right: 60px; */
-        padding-top: 20px;
-        /* width:100%;  */                              
+        padding-top: 20px;                                 
     } 
 }
 
@@ -600,6 +587,7 @@ h5{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    margin-left: 20px;
     flex: 1;
 }
                                             
@@ -629,7 +617,7 @@ h5{
         font-size: 16px;
         font-weight: 400;
         line-height: 1.40em;
-        max-width: 500px;
+        max-width: 100%;
         padding-left: 20px;
         flex: 1;
 }}
@@ -673,7 +661,7 @@ h5{
         flex-direction: column;
         justify-content: center;
         margin-left: 80px;
-        background-color: pink;
+       
 }}
 
 @media(max-width: 320px){
@@ -821,7 +809,19 @@ h5{
   
   .hidden{
     display: none;
-  }                                                            
+  } 
+  
+  footer{
+    
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 20px;
+    height:30px
+    
+    
+}
                                                  
 
 
